@@ -1,0 +1,26 @@
+<html>
+<head>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8"
+        <title>АРМ лаборанта экспресс-лаборатории</title>
+        <link rel="stylesheet" href="stylechem.css">
+        <script type="text/javascript" src="jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                jQuery.ajaxSettings.cache = false;
+                $("#par1").load("chem.php");
+                setInterval(function(){
+                    $("par1").load("chem.php");
+                },11000);
+            });
+        </script>
+              
+    </head>
+</head>
+<body>
+    <p id="par1"></p>
+    <div class="mobile-table">
+        
+    </div>
+</body>
+</html>
